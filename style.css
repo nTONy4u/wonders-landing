@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #202020;
+    background: linear-gradient(180deg, #F5F5F5 0%, #DDECFF 50%, #F5F5F5 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+header {
+    padding: 30px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 34px;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: 400;
+    color: #202020;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #202020;
+    font-size: 18px;
+}
+
+nav a.signup {
+    font-weight: 600;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    padding: 40px 0 80px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* FORM */
+.ticket-form {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.trip-type {
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E5E7EB;
+    padding-bottom: 16px;
+}
+
+.trip-type label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.passengers {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.passengers button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #DDD;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.stations {
+    gap: 24px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.input-group input {
+    padding: 14px 16px;
+    border: none;
+    background: #F5F5F5;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.date-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: #F5F5F5;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #0578FF;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.submit-btn:hover {
+    background: #0465d6;
+}
+
+/* STATS */
+.stats {
+    background: #0578FF;
+    padding: 60px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 40px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.stats-grid p {
+    color: white;
+    opacity: 0.9;
+    margin-top: 8px;
+}
+
+/* GALLERY */
+.gallery {
+    padding: 80px 0;
+}
+
+.gallery h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallery-grid img:first-child {
+    grid-column: span 2;
+}
+.gallery-grid img:last-child {
+    grid-column: span 2;
+}
+
+/* APP PROMO */
+.app-promo {
+    background: #FFC501;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.app-promo h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.app-buttons img {
+    height: 50px;
+}
+
+/* FAQ */
+.faq {
+    padding: 80px 0;
+    background: white;
+}
+
+.faq h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.faq-list {
+    max-width: 800px;
+}
+
+details {
+    border-bottom: 1px solid #E5E7EB;
+    padding: 16px 0;
+}
+
+summary {
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '+';
+    font-size: 24px;
+}
+
+details[open] summary::after {
+    content: '×';
+}
+
+details[open] p {
+    margin-top: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* CONTACT CARD */
+.contact-card {
+    background: white;
+    border-radius: 16px;
+    padding: 48px 40px;
+    text-align: center;
+    max-width: 520px;
+    margin: -120px auto 60px;
+    box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.contact-card h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #202020;
+}
+
+.contact-card a {
+    display: block;
+    color: #202020;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 12px 0;
+    transition: color 0.2s;
+}
+
+.contact-card a:hover {
+    color: #0578FF;
+}
+
+.contact-card p {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* FOOTER */
+footer {
+    background: #0578FF;
+    position: relative;
+    padding: 80px 0 40px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo img {
+    height: 34px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-logo span {
+    color: white;
+    font-size: 28px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-links h4 {
+    color: white;
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    display: block;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+}
+
+/* ADAPTIVE */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-grid img:first-child,
+    .gallery-grid img:last-child {
+        grid-column: span 1;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    nav.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .trip-type {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .gallery h2, .app-promo h2, .faq h2, .contact-card h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-card {
+        padding: 30px 20px;
+    }
+    
+    .contact-card a {
+        font-size: 18px;
+    }
+}

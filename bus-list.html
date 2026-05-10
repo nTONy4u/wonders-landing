@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus List | Wonders</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .bus-list-container {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .bus-list-message {
+            background: white;
+            border-radius: 24px;
+            padding: 48px 32px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .bus-list-message h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            color: #202020;
+        }
+        
+        .bus-list-message p {
+            color: #666;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        
+        .back-home {
+            display: inline-block;
+            background: #0578FF;
+            color: white;
+            padding: 12px 32px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .back-home:hover {
+            background: #0465d6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="assets/icons/logo.svg" alt="Wonders">
+            <span>Wonders</span>
+        </a>
+        <nav>
+            <a href="index.html#mobile-app">Mobile App</a>
+            <a href="index.html#faqs">FAQs</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="#" class="signup">Sign Up</a>
+        </nav>
+        <button class="burger" aria-label="Menu">☰</button>
+    </div>
+</header>
+
+<main>
+    <div class="bus-list-container">
+        <div class="bus-list-message">
+            <h2>Bus List</h2>
+            <p>Список доступных автобусов появится после добавления JavaScript во 2-й части проекта.</p>
+            <a href="index.html" class="back-home">← Back to Search</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="contact-card">
+            <h2>Contact us</h2>
+            <a href="tel:+419876543210">+41 98765 43210</a>
+            <a href="mailto:hello@peakpasses.eu">hello@peakpasses.eu</a>
+            <p>Alpenblick Strasse 7,<br>12345 Edelweiss Town, Alps</p>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/icons/logo-white.svg" alt="Wonders">
+                <span>Wonders</span>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>About</h4>
+                    <a href="#">How it works</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Partnership</a>
+                    <a href="#">Business Relation</a>
+                </div>
+                <div>
+                    <h4>Community</h4>
+                    <a href="#">Events</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Invite a friend</a>
+                </div>
+                <div>
+                    <h4>Socials</h4>
+                    <a href="#">Discord</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>English: © 2026 Peak Passages. All Rights Reserved (Especially the Window Seats).</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav');
+    if (burger) {
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    }
+</script>
+
+</body>
+</html>
