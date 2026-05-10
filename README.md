@@ -10,16 +10,6 @@
 - CSS3 (Flexbox, Grid, Media Queries)
 - JavaScript (2 часть)
 
-## Структура проекта
-wonders-lp/
-├── index.html # Главная страница с формой поиска
-├── bus-list.html # Страница результатов поиска (заглушка)
-├── style.css
-├── assets/
-│ ├── icons
-│ └── images/ # Изображения
-└── README.md
-
 
 ## Текущий статус (Часть 1)
 
