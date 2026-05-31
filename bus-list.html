@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus List | Wonders</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         .bus-list-container {
             min-height: 60vh;
@@ -15,39 +15,43 @@
             text-align: center;
             padding: 80px 20px;
         }
-        
+
         .bus-list-message {
             background: white;
-            border-radius: 24px;
+            border-radius: 16px;
             padding: 48px 32px;
             max-width: 500px;
             margin: 0 auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
         }
-        
+
         .bus-list-message h2 {
             font-size: 32px;
+            font-weight: 900;
             margin-bottom: 16px;
             color: #202020;
+            letter-spacing: -0.02em;
         }
-        
+
         .bus-list-message p {
             color: #666;
             margin-bottom: 24px;
             line-height: 1.6;
+            font-size: 15px;
         }
-        
+
         .back-home {
             display: inline-block;
             background: #0578FF;
             color: white;
             padding: 12px 32px;
-            border-radius: 40px;
+            border-radius: 10px;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             transition: background 0.2s;
+            font-size: 15px;
         }
-        
+
         .back-home:hover {
             background: #0465d6;
         }
@@ -67,7 +71,11 @@
             <a href="index.html#contact">Contact</a>
             <a href="#" class="signup">Sign Up</a>
         </nav>
-        <button class="burger" aria-label="Menu">☰</button>
+        <button class="burger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 
@@ -83,13 +91,6 @@
 
 <footer>
     <div class="container">
-        <div class="contact-card">
-            <h2>Contact us</h2>
-            <a href="tel:+419876543210">+41 98765 43210</a>
-            <a href="mailto:hello@peakpasses.eu">hello@peakpasses.eu</a>
-            <p>Alpenblick Strasse 7,<br>12345 Edelweiss Town, Alps</p>
-        </div>
-
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="assets/icons/logo-white.svg" alt="Wonders">
@@ -125,15 +126,7 @@
     </div>
 </footer>
 
-<script>
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('nav');
-    if (burger) {
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('show');
-        });
-    }
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
